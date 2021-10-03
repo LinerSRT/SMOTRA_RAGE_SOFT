@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.liner.keygen.generator.KeyGenerator">
+  <grid id="27dc6" binding="panel" layout-manager="GridLayoutManager" row-count="7" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="8" left="8" bottom="8" right="8"/>
+    <constraints>
+      <xy x="20" y="20" width="964" height="818"/>
+    </constraints>
+    <properties>
+      <background color="-14408409"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <vspacer id="dcae6">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <grid id="5d3b1" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14408409"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <hspacer id="2c9a6">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="e15d5" class="javax.swing.JLabel" binding="loadingStatus">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-14408409"/>
+              <focusable value="false"/>
+              <font name="Yandex Sans Text Regular" size="11"/>
+              <foreground color="-1579033"/>
+              <text value="Инициализация..."/>
+            </properties>
+          </component>
+          <component id="fad49" class="com.liner.keygen.generator.ui.CircleProgressBar" binding="loadingProgress">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+        </children>
+      </grid>
+      <grid id="33e0e" layout-manager="GridLayoutManager" row-count="6" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14408409"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="7ef09" class="com.liner.keygen.generator.ui.LinerButton" binding="updateStatButton">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <rippleColor color="-14897682"/>
+              <text value="Обновить статистику"/>
+            </properties>
+          </component>
+          <component id="e0747" class="com.liner.keygen.generator.ui.LinerButton" binding="getKeyInfo">
+            <constraints>
+              <grid row="3" column="1" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <rippleColor color="-12699410"/>
+              <text value="Получить информацию"/>
+            </properties>
+          </component>
+          <component id="2cc99" class="com.liner.keygen.generator.ui.LinerEditText" binding="keyField">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="200" height="30"/>
+                <preferred-size width="200" height="30"/>
+                <maximum-size width="200" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <rippleColor color="-3091413"/>
+            </properties>
+          </component>
+          <component id="73c6a" class="com.liner.keygen.generator.ui.LinerEditText" binding="userField">
+            <constraints>
+              <grid row="1" column="1" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="200" height="30"/>
+                <preferred-size width="200" height="30"/>
+                <maximum-size width="200" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <rippleColor color="-13877522"/>
+            </properties>
+          </component>
+          <hspacer id="c2fed">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <grid id="86317" class="com.liner.keygen.generator.ui.RoundedPanel" binding="statPanel" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="6" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-13684942"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="e60c3" class="javax.swing.JLabel" binding="statText">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Medium" size="14"/>
+                  <foreground color="-1118482"/>
+                  <text value="Статистика"/>
+                </properties>
+              </component>
+              <component id="c2077" class="javax.swing.JLabel" binding="statTotalUserText">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <text value="Всего пользователей: 0"/>
+                </properties>
+              </component>
+              <component id="58faf" class="javax.swing.JLabel" binding="statTotalOnlineUserText">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <text value="Пользователей в сети: 0"/>
+                </properties>
+              </component>
+              <component id="4e3db" class="javax.swing.JLabel" binding="statKeys">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <text value="Всего ключей: 0"/>
+                </properties>
+              </component>
+              <component id="c3f40" class="javax.swing.JLabel" binding="statActiveKeys">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <text value="Активных ключей: 0"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="18fce" binding="informationPanel" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14408409"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="c6ca6" class="com.liner.keygen.generator.ui.RoundedPanel" binding="userInfoPanel" layout-manager="GridLayoutManager" row-count="10" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-13684942"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="42345" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Medium" size="14"/>
+                  <foreground color="-1118482"/>
+                  <text value="Пользователь"/>
+                </properties>
+              </component>
+              <component id="93e46" class="javax.swing.JLabel" binding="userNameText">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <text value="Имя пользователя:"/>
+                </properties>
+              </component>
+              <component id="62cee" class="javax.swing.JLabel" binding="userOnlineText">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <text value="Онлайн:"/>
+                </properties>
+              </component>
+              <component id="72c53" class="javax.swing.JLabel" binding="userLastOnlineText">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <text value="Был онлайн в:"/>
+                </properties>
+              </component>
+              <component id="d2467" class="javax.swing.JLabel" binding="userKeysText">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <text value="Ключей пользователя"/>
+                </properties>
+              </component>
+              <component id="5243f" class="javax.swing.JLabel" binding="userBanText">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <text value="Забанен:"/>
+                </properties>
+              </component>
+              <component id="92776" class="javax.swing.JLabel" binding="userCPUIDText">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <text value="CPUID:"/>
+                </properties>
+              </component>
+              <component id="cabf2" class="javax.swing.JLabel" binding="userMBIDText">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <text value="MBID:"/>
+                </properties>
+              </component>
+              <component id="9d0d4" class="javax.swing.JLabel" binding="userHDDIDText">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <text value="HDDID:"/>
+                </properties>
+              </component>
+              <component id="eeea1" class="javax.swing.JLabel" binding="userWindowsText">
+                <constraints>
+                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <text value="Windows:"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="bf466" class="com.liner.keygen.generator.ui.RoundedPanel" binding="keyInfoPanel" layout-manager="GridLayoutManager" row-count="8" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-13684942"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="9f395" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Medium" size="14"/>
+                  <foreground color="-1118482"/>
+                  <text value="Ключ"/>
+                </properties>
+              </component>
+              <component id="f9c46" class="javax.swing.JLabel" binding="keyUser">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <text value="Пользователь"/>
+                </properties>
+              </component>
+              <component id="105a4" class="javax.swing.JLabel" binding="keyText">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <text value="Ключ:"/>
+                </properties>
+              </component>
+              <component id="cf57a" class="javax.swing.JLabel" binding="keyActive">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <text value="Активирован:"/>
+                </properties>
+              </component>
+              <component id="40589" class="javax.swing.JLabel" binding="keyDuration">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <text value="Время действия:"/>
+                </properties>
+              </component>
+              <component id="5d7dd" class="javax.swing.JLabel" binding="keyExpireTime">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <text value="Истекает:"/>
+                </properties>
+              </component>
+              <component id="6fc5f" class="javax.swing.JLabel" binding="keyActivateTime">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <text value="Активирован в:"/>
+                </properties>
+              </component>
+              <vspacer id="d6636">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+          <hspacer id="d7424">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <grid id="b2d45" binding="userActionPanel" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-14408409"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="2784c" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="71a66" class="com.liner.keygen.generator.ui.LinerEditText" binding="banReasonField">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="150" height="30"/>
+                        <preferred-size width="150" height="30"/>
+                        <maximum-size width="150" height="30"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="50047" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-14408409"/>
+                      <focusable value="false"/>
+                      <font name="Yandex Sans Text Light" size="12"/>
+                      <foreground color="-1118482"/>
+                      <text value="Причина бана\разбана"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <component id="22e03" class="com.liner.keygen.generator.ui.LinerButton" binding="unbanUserButton">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Разбанить"/>
+                </properties>
+              </component>
+              <component id="323f3" class="com.liner.keygen.generator.ui.LinerButton" binding="banUserButton">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Забанить"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="4490e" binding="keyActionPanel" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-14408409"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="ee063" layout-manager="GridLayoutManager" row-count="1" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="54838" class="com.liner.keygen.generator.ui.LinerEditText" binding="addHourField">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="100" height="30"/>
+                        <preferred-size width="100" height="30"/>
+                        <maximum-size width="100" height="30"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <hspacer id="415da">
+                    <constraints>
+                      <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <component id="8b9a7" class="com.liner.keygen.generator.ui.LinerEditText" binding="addDayField">
+                    <constraints>
+                      <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="100" height="30"/>
+                        <preferred-size width="100" height="30"/>
+                        <maximum-size width="100" height="30"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="38fcb" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-14408409"/>
+                      <focusable value="false"/>
+                      <font name="Yandex Sans Text Light" size="12"/>
+                      <foreground color="-1118482"/>
+                      <text value="Дней: "/>
+                    </properties>
+                  </component>
+                  <component id="57b11" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-14408409"/>
+                      <focusable value="false"/>
+                      <font name="Yandex Sans Text Light" size="12"/>
+                      <foreground color="-1118482"/>
+                      <text value="Часов:"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="bbb85" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408409"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="709f6" class="com.liner.keygen.generator.ui.LinerButton" binding="keyAddTimeButton">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Добавить времени"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <component id="9ce62" class="com.liner.keygen.generator.ui.LinerButton">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Деактивировать ключ"/>
+                </properties>
+              </component>
+              <component id="3a8c8" class="com.liner.keygen.generator.ui.LinerButton">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Отменить привязку"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="1683c" layout-manager="GridLayoutManager" row-count="1" column-count="8" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14408409"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="5bd02" class="com.liner.keygen.generator.ui.LinerEditText" binding="generatedKeyText">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="200" height="30"/>
+                <preferred-size width="200" height="30"/>
+                <maximum-size width="200" height="30"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="e914e" class="com.liner.keygen.generator.ui.LinerEditText" binding="generateDayFiled">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="100" height="30"/>
+                <preferred-size width="100" height="30"/>
+                <maximum-size width="100" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="47dcb" class="com.liner.keygen.generator.ui.LinerEditText" binding="generateHourField">
+            <constraints>
+              <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="100" height="30"/>
+                <preferred-size width="100" height="30"/>
+                <maximum-size width="100" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <hspacer id="10d69">
+            <constraints>
+              <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="a54dd" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-14408409"/>
+              <focusable value="false"/>
+              <font name="Yandex Sans Text Light" size="12"/>
+              <foreground color="-1118482"/>
+              <text value="Дней: "/>
+            </properties>
+          </component>
+          <component id="620ac" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-14408409"/>
+              <focusable value="false"/>
+              <font name="Yandex Sans Text Light" size="12"/>
+              <foreground color="-1118482"/>
+              <text value="Часов:"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="aa91c" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="2"/>
+            <maximum-size width="-1" height="2"/>
+          </grid>
+        </constraints>
+        <properties>
+          <alignmentX value="0.0"/>
+          <alignmentY value="0.0"/>
+          <background color="-13684942"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="996e5" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14408409"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="d1b87" class="com.liner.keygen.generator.ui.LinerButton" binding="generateKey">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Генерировать ключ"/>
+            </properties>
+          </component>
+          <component id="81610" class="com.liner.keygen.generator.ui.LinerButton" binding="sendKeyToServer">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Отправить на сервер"/>
+            </properties>
+          </component>
+          <hspacer id="e39f1">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <hspacer id="a60c6">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
