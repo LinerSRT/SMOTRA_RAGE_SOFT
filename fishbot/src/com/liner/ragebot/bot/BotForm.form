@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.liner.ragebot.bot.BotForm">
+  <grid id="27dc6" binding="panel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="509" height="873"/>
+    </constraints>
+    <properties>
+      <background color="-14408409"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="6735e" class="com.liner.ragebot.ui.RoundedPanel" layout-manager="GridLayoutManager" row-count="9" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="4" left="4" bottom="4" right="4"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14408409"/>
+          <bottomColor color="-14408409"/>
+          <bottomLeft value="16"/>
+          <bottomRight value="16"/>
+          <headerColor color="-14408409"/>
+          <topLeft value="16"/>
+          <topRight value="16"/>
+          <visible value="true"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="7f483" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-14408409"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="6535e" class="com.liner.ragebot.ui.LinerButton" binding="discordButton">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Discord"/>
+                </properties>
+              </component>
+              <component id="fa164" class="com.liner.ragebot.ui.LinerButton" binding="telegramButton">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <focusColor color="-28917"/>
+                  <text value="Telegram"/>
+                </properties>
+              </component>
+              <hspacer id="46bc1">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="47bc3">
+                <constraints>
+                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <component id="ac719" class="com.liner.ragebot.ui.LinerButton" binding="funpayButton">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="FunPay"/>
+                  <visible value="false"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <component id="613ac" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-14408409"/>
+              <focusable value="false"/>
+              <font name="Yandex Sans Text Bold" size="11"/>
+              <foreground color="-657931"/>
+              <text value="Связь с разработчиками"/>
+            </properties>
+          </component>
+          <grid id="1712f" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="2"/>
+                <maximum-size width="-1" height="2"/>
+              </grid>
+            </constraints>
+            <properties>
+              <alignmentX value="0.0"/>
+              <alignmentY value="0.0"/>
+              <background color="-13684942"/>
+            </properties>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="a76aa" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="2"/>
+                <maximum-size width="-1" height="2"/>
+              </grid>
+            </constraints>
+            <properties>
+              <alignmentX value="0.0"/>
+              <alignmentY value="0.0"/>
+              <background color="-13684942"/>
+            </properties>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="f97a1" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-14408409"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="93918" class="com.liner.ragebot.ui.CircleProgressBar" binding="statusProgress">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foregroundColor color="-28917"/>
+                  <indeterminate value="true"/>
+                  <invisible value="false"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="62458" class="javax.swing.JLabel" binding="statusText">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <alignmentY value="0.0"/>
+                  <background color="-14408409"/>
+                  <doubleBuffered value="true"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Regular" size="11"/>
+                  <foreground color="-1579033"/>
+                  <text value="Выполняется инициализация..."/>
+                </properties>
+              </component>
+              <component id="caf4c" class="javax.swing.JLabel" binding="keyDuration">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <alignmentY value="0.0"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1579033"/>
+                  <iconTextGap value="4"/>
+                  <text value="Ключ:"/>
+                </properties>
+              </component>
+              <hspacer id="e2f61">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+            </children>
+          </grid>
+          <grid id="cff85" class="com.liner.ragebot.ui.RoundedPanel" binding="botStatusPanel" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="8" left="4" bottom="8" right="4"/>
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-13684942"/>
+              <bottomColor color="-13684942"/>
+              <headerColor color="-15356138"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="446b2" class="javax.swing.JLabel" binding="fishCatched">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <alignmentY value="0.0"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1579033"/>
+                  <iconTextGap value="4"/>
+                  <text value="Рыбы поймано: 0"/>
+                </properties>
+              </component>
+              <component id="4ec39" class="javax.swing.JLabel" binding="nextInventoryCheckCount">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <alignmentY value="0.0"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1579033"/>
+                  <iconTextGap value="4"/>
+                  <text value="До следующей проверки инвентаря: 0 рыб"/>
+                </properties>
+              </component>
+              <grid id="77e5d" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13684942"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="8b654" class="javax.swing.JLabel" binding="fishingTime">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.0"/>
+                      <font name="Yandex Sans Text Light" size="12"/>
+                      <foreground color="-1579033"/>
+                      <iconTextGap value="4"/>
+                      <text value="Время ловли: 00:00"/>
+                    </properties>
+                  </component>
+                  <component id="3b03a" class="javax.swing.JProgressBar" binding="fishingTimeProgress">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="200" height="8"/>
+                        <preferred-size width="200" height="8"/>
+                        <maximum-size width="200" height="8"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-13355980"/>
+                      <borderPainted value="false"/>
+                      <focusable value="false"/>
+                      <foreground color="-28917"/>
+                      <indeterminate value="false"/>
+                      <string value=""/>
+                      <value value="0"/>
+                      <visible value="true"/>
+                    </properties>
+                  </component>
+                  <hspacer id="198de">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <grid id="d691b" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13684942"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="c9806" class="javax.swing.JLabel" binding="fishingTimeOutTime">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.0"/>
+                      <font name="Yandex Sans Text Light" size="12"/>
+                      <foreground color="-1579033"/>
+                      <iconTextGap value="4"/>
+                      <text value="Тайм-аут: 00:00"/>
+                    </properties>
+                  </component>
+                  <component id="5ede8" class="javax.swing.JProgressBar" binding="fishingTimeOutProgress">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="200" height="8"/>
+                        <preferred-size width="200" height="8"/>
+                        <maximum-size width="200" height="8"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-13355980"/>
+                      <borderPainted value="false"/>
+                      <focusable value="false"/>
+                      <foreground color="-28917"/>
+                      <indeterminate value="false"/>
+                      <string value=""/>
+                      <value value="0"/>
+                      <visible value="true"/>
+                    </properties>
+                  </component>
+                  <hspacer id="f68cf">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="d77c" class="com.liner.ragebot.ui.RoundedPanel" binding="botSettingsPanel" layout-manager="GridLayoutManager" row-count="14" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="8" left="4" bottom="8" right="4"/>
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-13684942"/>
+              <bottomColor color="-13684942"/>
+              <headerColor color="-13877522"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="6628a" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13684942"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="39bbd" class="javax.swing.JLabel" binding="gameHookText">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.0"/>
+                      <font name="Yandex Sans Text Light" size="12"/>
+                      <foreground color="-1579033"/>
+                      <iconTextGap value="4"/>
+                      <text value="Обход позиции: ?"/>
+                    </properties>
+                  </component>
+                  <component id="8d3af" class="com.liner.ragebot.ui.LinerButton" binding="gameHook">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <backgroundColor color="-14408409"/>
+                      <backgroundColorSecondary color="-14671581"/>
+                      <backgroundPressedColor color="-14671581"/>
+                      <focusColor color="-28917"/>
+                      <rippleColor color="-28917"/>
+                      <text value="Выполнить"/>
+                    </properties>
+                  </component>
+                  <hspacer id="74193">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <component id="9aca6" class="com.liner.ragebot.ui.LinerButton" binding="checkHook">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <backgroundColor color="-14408409"/>
+                      <backgroundColorSecondary color="-14671581"/>
+                      <backgroundPressedColor color="-14671581"/>
+                      <focusColor color="-28917"/>
+                      <rippleColor color="-28917"/>
+                      <text value="Проверить"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <component id="a2751" class="javax.swing.JCheckBox" binding="useAnyRods">
+                <constraints>
+                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13684942"/>
+                  <enabled value="false"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                  <text value="Использовать любые удочки"/>
+                  <toolTipText value=""/>
+                </properties>
+              </component>
+              <component id="7f688" class="javax.swing.JCheckBox" binding="useAnyBaits">
+                <constraints>
+                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13684942"/>
+                  <enabled value="false"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                  <text value="Использовать любые наживки"/>
+                  <toolTipText value=""/>
+                </properties>
+              </component>
+              <component id="4c715" class="javax.swing.JCheckBox" binding="autoCloseGame">
+                <constraints>
+                  <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13684942"/>
+                  <enabled value="false"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                  <text value="Закрыть игру если нет удочек\наживок"/>
+                  <toolTipText value=""/>
+                </properties>
+              </component>
+              <component id="e2dfb" class="javax.swing.JCheckBox" binding="autoStopBot">
+                <constraints>
+                  <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13684942"/>
+                  <enabled value="false"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                  <text value="Остановить софт если нет удочек\наживок"/>
+                  <toolTipText value=""/>
+                </properties>
+              </component>
+              <component id="be1ea" class="javax.swing.JCheckBox" binding="autoSuicide">
+                <constraints>
+                  <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13684942"/>
+                  <enabled value="false"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                  <text value="Суицид если нет удочек\наживок"/>
+                  <toolTipText value=""/>
+                </properties>
+              </component>
+              <component id="4f2b9" class="javax.swing.JCheckBox" binding="dropBrokenRods">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13684942"/>
+                  <contentAreaFilled value="true"/>
+                  <enabled value="false"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Light" size="12"/>
+                  <foreground color="-1118482"/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                  <text value="Выкидывать сломанные удочки"/>
+                  <toolTipText value=""/>
+                </properties>
+              </component>
+              <component id="59b11" class="javax.swing.JCheckBox" binding="qteFix">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13684942"/>
+                  <focusable value="false"/>
+                  <font name="Yandex Sans Text Medium" size="12"/>
+                  <foreground color="-1168364"/>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                  <text value="Включить если срывает рыбу (Q\E)"/>
+                  <toolTipText value=""/>
+                </properties>
+              </component>
+              <grid id="6ad76" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13684942"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="39d39" class="javax.swing.JComboBox" binding="chooseBait">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-14408409"/>
+                      <focusable value="false"/>
+                      <font name="Yandex Sans Text Light" size="12"/>
+                      <foreground color="-1"/>
+                      <toolTipText value=""/>
+                    </properties>
+                  </component>
+                  <component id="de5c" class="javax.swing.JLabel" binding="baitText">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.0"/>
+                      <font name="Yandex Sans Text Light" size="12"/>
+                      <foreground color="-1579033"/>
+                      <iconTextGap value="4"/>
+                      <text value="Наживка: "/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="4f252" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13684942"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="a3a75" class="javax.swing.JComboBox" binding="interfaceSelect">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="200" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-14408409"/>
+                      <focusable value="false"/>
+                      <font name="Yandex Sans Text Light" size="12"/>
+                      <foreground color="-1"/>
+                      <toolTipText value=""/>
+                    </properties>
+                  </component>
+                  <component id="869be" class="javax.swing.JLabel" binding="interfaceText">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.0"/>
+                      <font name="Yandex Sans Text Light" size="12"/>
+                      <foreground color="-1579033"/>
+                      <iconTextGap value="4"/>
+                      <text value="Интерфейс"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="4b7d" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13684942"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="50383" class="javax.swing.JComboBox" binding="chooseRod">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-14408409"/>
+                      <focusable value="false"/>
+                      <font name="Yandex Sans Text Light" size="12"/>
+                      <foreground color="-1"/>
+                      <toolTipText value=""/>
+                    </properties>
+                  </component>
+                  <component id="4bad2" class="javax.swing.JLabel" binding="rodText">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.0"/>
+                      <font name="Yandex Sans Text Light" size="12"/>
+                      <foreground color="-1579033"/>
+                      <iconTextGap value="4"/>
+                      <text value="Удочка"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="ff349" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13684942"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="962e7" class="javax.swing.JComboBox" binding="fishingTimeSelector">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-14408409"/>
+                      <focusable value="false"/>
+                      <font name="Yandex Sans Text Light" size="12"/>
+                      <foreground color="-1"/>
+                      <toolTipText value=""/>
+                    </properties>
+                  </component>
+                  <component id="d085a" class="javax.swing.JLabel" binding="fishingTimeText">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.0"/>
+                      <font name="Yandex Sans Text Light" size="12"/>
+                      <foreground color="-1579033"/>
+                      <iconTextGap value="4"/>
+                      <text value="Время рыбалки:"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="71dc2" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13684942"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="a4465" class="javax.swing.JComboBox" binding="fishingTimeoutSelector">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-14408409"/>
+                      <focusable value="false"/>
+                      <font name="Yandex Sans Text Light" size="12"/>
+                      <foreground color="-1"/>
+                      <toolTipText value=""/>
+                    </properties>
+                  </component>
+                  <component id="c4e32" class="javax.swing.JLabel" binding="fishingTimeoutText">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.0"/>
+                      <font name="Yandex Sans Text Light" size="12"/>
+                      <foreground color="-1579033"/>
+                      <iconTextGap value="4"/>
+                      <text value="Тайм-аут между рыбалками:"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="c0dcf" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13684942"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="3d913" class="javax.swing.JComboBox" binding="checkInventorySelector">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-14408409"/>
+                      <enabled value="false"/>
+                      <focusable value="false"/>
+                      <font name="Yandex Sans Text Light" size="12"/>
+                      <foreground color="-1"/>
+                      <toolTipText value=""/>
+                    </properties>
+                  </component>
+                  <component id="d75d" class="javax.swing.JLabel" binding="checkInventoryText">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.0"/>
+                      <font name="Yandex Sans Text Light" size="12"/>
+                      <foreground color="-1579033"/>
+                      <iconTextGap value="4"/>
+                      <text value="Проверять инвентарь:"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="97173" binding="botControlPanel" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-14408409"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="3dad0" class="com.liner.ragebot.ui.LinerButton" binding="startBot">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Запуск (F7)"/>
+                </properties>
+              </component>
+              <component id="3afb" class="com.liner.ragebot.ui.LinerButton" binding="stopBot">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Стоп (F8)"/>
+                </properties>
+              </component>
+              <hspacer id="228ee">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="1c2da">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+            </children>
+          </grid>
+          <component id="c2681" class="javax.swing.JLabel" binding="initMessage">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <alignmentY value="0.0"/>
+              <font name="Yandex Sans Text Light" size="14"/>
+              <foreground color="-1579033"/>
+              <iconTextGap value="4"/>
+              <text value="Рыбы поймано: 0"/>
+              <visible value="false"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="d6ec4" class="com.liner.ragebot.ui.RoundedPanel" binding="dragPanel" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="2" left="8" bottom="2" right="8"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-13684686"/>
+          <bottomColor color="-28917"/>
+          <bottomLeft value="8"/>
+          <bottomRight value="8"/>
+          <headerColor color="-28917"/>
+          <topLeft value="8"/>
+          <topRight value="8"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="54a3c" class="javax.swing.JLabel" binding="appTitle">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-14408409"/>
+              <focusable value="false"/>
+              <font name="Yandex Sans Text Light" size="12"/>
+              <foreground color="-1118482"/>
+              <text value="Smotrafish"/>
+            </properties>
+          </component>
+          <component id="b23c4" class="com.liner.ragebot.ui.LinerButton" binding="closeButton">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <focusColor color="-1172692"/>
+              <foregroundColor color="-460552"/>
+              <rippleColor color="-1172692"/>
+              <text value="Закрыть"/>
+            </properties>
+          </component>
+          <hspacer id="cf5a6">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="3d6b4" class="com.liner.ragebot.ui.LinerButton" binding="logOutButton">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <focusColor color="-1172692"/>
+              <foregroundColor color="-460552"/>
+              <rippleColor color="-1172692"/>
+              <text value="Выйти"/>
+            </properties>
+          </component>
+          <grid id="102ff" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="40" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-13684686"/>
+            </properties>
+            <border type="none"/>
+            <children/>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
